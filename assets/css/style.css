@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, ::before, ::after {
+  font-family: "Lexend";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  animation: paf .5s ease-in 0s infinite normal none;
+}
+
+.btn {
+  background: #fff;
+  color: #7027d0;
+
+  font-weight: bold;
+
+  padding: 5px 10px;
+  margin: 5px;
+
+  border: 5px solid #7027d0;
+  border-radius: 10px;
+
+  box-shadow: -3px 3px #ff0033, 3px -3px #0099ff;
+
+  transition: box-shadow .2s ease-in;
+}
+
+.btn:hover {
+  animation: flick .5s linear 0s infinite normal none;
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.start-buttons {
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: .5;
+}
+
+.start-buttons>.btn {
+  width: 100%;
+
+  margin: 10px;
+}
+
+/* Keyframes Animations */
+@keyframes flick {
+  0% {
+    transform: translate(0, 0) rotate(-15deg);
+  }
+
+  100% {
+    transform: translate(3px, 6px) rotate(0);
+  }
+
+  26.9% {
+    transform: translate(0, 0) rotate(-15deg);
+  }
+
+  27% {
+    transform: translate(-5px, 1px) rotate(10deg);
+  }
+
+  47.9% {
+    transform: translate(-5px, 1px) rotate(10deg);
+  }
+
+  48% {
+    transform: translate(5px, 3px) rotate(-5deg);
+  }
+
+  62.9% {
+    transform: translate(5px, 3px) rotate(-5deg);
+  }
+
+  63% {
+    transform: translate(-5px, -4px) rotate(172deg);
+  }
+
+  81.9% {
+    transform: translate(-5px, -4px) rotate(172deg);
+  }
+
+  82% {
+    transform: translate(3px, 6px) rotate(0);
+  }
+}
+
+@keyframes paf {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  0.1% {
+    transform: translate(10px, -10px);
+  }
+
+  60% {
+    transform: translate(0, 0);
+  }
+}
+
+/*
