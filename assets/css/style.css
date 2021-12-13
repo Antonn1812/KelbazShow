@@ -58,7 +58,8 @@ body {
   flex-direction: column;
 
   flex-grow: .5;
-  max-width: 200px;
+  min-width: 200px;
+  max-width: 300px;
 }
 
 .start-buttons>.btn {
