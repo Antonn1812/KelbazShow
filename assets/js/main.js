@@ -15,8 +15,4 @@ let gameOver = function () {
   clearInterval(bg);
   document.body.style.backgroundColor = "red";
   document.body.innerHTML = "Crashed ! Reload the page to retry.";
-  
-  while (true) {
-    console.log("DED !");
-  }
 };
