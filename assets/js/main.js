@@ -8,15 +8,15 @@ let playBtn = document.querySelector(".play-btn");
 let closeBtn = document.querySelector(".close-btn");
 
 closeBtn.addEventListener("click", () => {
-  gameOver()
+  gameOver();
 });
 
 let gameOver = function () {
+  clearInterval(bg);
+  document.body.style.backgroundColor = "red";
+  document.body.innerHTML = "Crashed ! Reload the page to retry.";
+  
   while (true) {
     console.log("DED !");
-
-    clearInterval(bg);
-    document.body.style.backgroundColor = "red";
-    document.body.innerHTML = "Crashed ! Reload the page to retry.";
   }
-}
+};
