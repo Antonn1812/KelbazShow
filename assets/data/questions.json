@@ -1,0 +1,23 @@
+[
+  {
+    "question": "Quel est la somme de 1 + 1 ?",
+    "buttons": [
+      {
+        "content": "2",
+        "makeWin": true
+      },
+      {
+        "content": "124,43",
+        "makeWin": false
+      },
+      {
+        "content": "38",
+        "makeWin": false
+      },
+      {
+        "content": "43",
+        "makeWin": false
+      }
+    ]
+  }
+]

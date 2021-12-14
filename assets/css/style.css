@@ -13,7 +13,7 @@ body {
 }
 
 .logo {
-  animation: paf .5s ease-in 0s infinite normal none;
+  animation: bump .5s ease-in 0s infinite normal none;
 }
 
 .btn {
@@ -31,6 +31,12 @@ body {
   box-shadow: -3px 3px #ff0033, 3px -3px #0099ff;
 
   transition: box-shadow .2s ease-in;
+
+  animation: flick 1s linear 0s infinite normal none;
+}
+
+.btn:nth-child(3n+1) {
+  animation: flick 1s linear .2s infinite normal none;
 }
 
 .btn:hover {
@@ -80,6 +86,25 @@ body {
 .game-panel {
   display: none;
 }
+.question-container {
+  margin-bottom: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: -0.5px 0.5px #ff0033, 0.5px -0.5px #0099ff;
+
+  animation: bump 1s ease-in 0s infinite normal none;
+}
+.question-buttons {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  row-gap: 50px;
+  column-gap: 50px;
+
+  margin: 100px;
+}
 
 /* Keyframes Animations */
 @keyframes flick {
@@ -124,7 +149,7 @@ body {
   }
 }
 
-@keyframes paf {
+@keyframes bump {
   0% {
     transform: translate(0, 0);
   }
