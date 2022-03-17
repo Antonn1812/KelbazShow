@@ -19,5 +19,47 @@
         "makeWin": false
       }
     ]
+  },
+  {
+    "question": "...___...",
+    "buttons": [
+      {
+        "content": ".__.._",
+        "makeWin": true
+      },
+      {
+        "content": ".___._.__..",
+        "makeWin": false
+      },
+      {
+        "content": ".........",
+        "makeWin": false
+      },
+      {
+        "content": "_________",
+        "makeWin": false
+      }
+    ]
+  },
+  {
+    "question": "La question est :",
+    "buttons": [
+      {
+        "content": "Trop longue",
+        "makeWin": true
+      },
+      {
+        "content": "14 ÷ 2",
+        "makeWin": false
+      },
+      {
+        "content": "Banane",
+        "makeWin": false
+      },
+      {
+        "content": "Ṭ̶̓o̴͎͓̱͠ủ̷͖̘͑ţ̷̱͙̎ẻ̵̠͖̊ͅš̶̤̿ͅ ̸̢̪̓̓͒͜l̷͍͉͈̀ę̸͌ṣ̶͎͑̊ ̸̖̿̅͝r̷̞̰̈́̽͝é̸̡̬̃p̵̦̾́o̴̯̗̓͑n̸̞̣͈͒̏s̷̛̘͍̀̊e̷̺̚͠s̷̭͙̿̃͜",
+        "makeWin": false
+      }
+    ]
   }
 ]

@@ -26,13 +26,31 @@ function gameOver() {
   document.body.innerHTML = "Crashed ! Reload the page to retry.";
 }
 
-function letQuestion() {
-  fetch("assets/data/questions.json", (data) => {
-    question.innerHTML = "ok";
-    data.json().then((jsonData) => {
-      question.innerHTML = JSON.stringify(jsonData);
+function letQuestion(n) {
+  fetch("./assets/data/questions.json")
+    .then((r) => {
+      return r.json();
+    })
+    .then((data) => {
+      let random = Math.floor(Math.random() * data.length);
+      if (n != undefined && random === n) {
+        if (n === data.length - 1) random = 0;
+        else random++;
+      }
+      let q = data[random];
+
+      question.innerHTML = q.question;
+
+      console.log(random);
+
+      buttons.forEach((button, index) => {
+        button.innerHTML = q.buttons[index].content;
+        button.onclick = () => {
+          if (q.buttons[index].makeWin) letQuestion(random);
+          else gameOver();
+        };
+      });
     });
-  });
 }
 
 function startGame() {

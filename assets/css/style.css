@@ -86,6 +86,7 @@ body {
 .game-panel {
   display: none;
 }
+
 .question-container {
   margin-bottom: 50px;
   color: #fff;
@@ -94,6 +95,18 @@ body {
 
   animation: bump 1s ease-in 0s infinite normal none;
 }
+
+#live-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50vw;
+
+  transform: translateX(-50%);
+
+  color: #fff;
+  font-weight: bold;
+}
+
 .question-buttons {
   display: grid;
 
@@ -137,11 +150,11 @@ body {
   }
 
   63% {
-    transform: translate(-5px, -4px) rotate(172deg);
+    transform: translate(-5px, -4px) rotate(15deg);
   }
 
   81.9% {
-    transform: translate(-5px, -4px) rotate(172deg);
+    transform: translate(-5px, -4px) rotate(15deg);
   }
 
   82% {
