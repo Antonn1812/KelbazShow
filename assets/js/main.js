@@ -13,13 +13,19 @@ let qN = 1;
 let playBtn = document.querySelector(".play-btn");
 let closeBtn = document.querySelector(".close-btn");
 let logo = document.querySelector(".logo");
+let lives = document.querySelector("#live-container");
 let buttons = document.querySelectorAll(".quiz-btn");
 let question = document.querySelector(".question-container");
 
 //<
 
-// Function definition
+// Functions definitions
 
+function handleLives() {
+  if (lives.innerText.length <= 0) return gameOver();
+
+  lives.innerText.slice(0, lives.innerText.length - 1);
+}
 function gameOver() {
   clearInterval(bg);
   document.body.style.backgroundColor = "red";
@@ -41,13 +47,11 @@ function letQuestion(n) {
 
       question.innerHTML = q.question;
 
-      console.log(random);
-
       buttons.forEach((button, index) => {
         button.innerHTML = q.buttons[index].content;
         button.onclick = () => {
           if (q.buttons[index].makeWin) letQuestion(random);
-          else gameOver();
+          else handleLives();
         };
       });
     });

@@ -3,16 +3,16 @@
     "question": "Quel est la somme de 1 + 1 ?",
     "buttons": [
       {
-        "content": "2",
-        "makeWin": true
-      },
-      {
         "content": "124,43",
         "makeWin": false
       },
       {
         "content": "38",
         "makeWin": false
+      },
+      {
+        "content": "2",
+        "makeWin": true
       },
       {
         "content": "43",
@@ -24,6 +24,10 @@
     "question": "...___...",
     "buttons": [
       {
+        "content": ".........",
+        "makeWin": false
+      },
+      {
         "content": ".__.._",
         "makeWin": true
       },
@@ -31,10 +35,7 @@
         "content": ".___._.__..",
         "makeWin": false
       },
-      {
-        "content": ".........",
-        "makeWin": false
-      },
+
       {
         "content": "_________",
         "makeWin": false
