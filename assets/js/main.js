@@ -24,7 +24,7 @@ let question = document.querySelector(".question-container");
 function handleLives() {
   if (lives.innerText.length <= 0) return gameOver();
 
-  lives.innerText.slice(0, lives.innerText.length - 1);
+  lives.innerText = lives.innerText.slice(0, lives.innerText.length - 1);
 }
 function gameOver() {
   clearInterval(bg);
