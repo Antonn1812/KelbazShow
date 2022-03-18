@@ -123,7 +123,7 @@ body {
 /* Keyframes Animations */
 @keyframes flick {
   0% {
-    transform: translate(0, 0) rotate(-15deg) skew(-15deg);
+    transform: translate(0, 0) rotate(-15deg) skew(15deg);
   }
 
   100% {
@@ -131,31 +131,31 @@ body {
   }
 
   26.9% {
-    transform: translate(0, 0) rotate(-15deg) skew(-15deg);
+    transform: translate(0, 0) rotate(-15deg) skew(15deg);
   }
 
   27% {
-    transform: translate(-5px, 1px) rotate(10deg) skew(10deg);
+    transform: translate(-5px, 1px) rotate(10deg) skew(-10deg);
   }
 
   47.9% {
-    transform: translate(-5px, 1px) rotate(10deg) skew(10deg);
+    transform: translate(-5px, 1px) rotate(10deg) skew(-10deg);
   }
 
   48% {
-    transform: translate(5px, 3px) rotate(-5deg) skew(-5deg);
+    transform: translate(5px, 3px) rotate(-5deg) skew(5deg);
   }
 
   62.9% {
-    transform: translate(5px, 3px) rotate(-5deg) skew(-5deg);
+    transform: translate(5px, 3px) rotate(-5deg) skew(5deg);
   }
 
   63% {
-    transform: translate(-5px, -4px) rotate(15deg) skew(15deg);
+    transform: translate(-5px, -4px) rotate(15deg) skew(-15deg);
   }
 
   81.9% {
-    transform: translate(-5px, -4px) rotate(15deg) skew(15deg);
+    transform: translate(-5px, -4px) rotate(15deg) skew(-15deg);
   }
 
   82% {
