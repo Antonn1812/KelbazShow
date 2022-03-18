@@ -91,7 +91,10 @@ body {
 
 .question-container {
   margin-bottom: 50px;
-  color: #fff;
+
+  background-color: #fff;
+  color: #000;
+
   font-weight: bold;
   text-shadow: -0.5px 0.5px #ff0033, 0.5px -0.5px #0099ff;
 
