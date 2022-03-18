@@ -22,9 +22,9 @@ let question = document.querySelector(".question-container");
 // Functions definitions
 
 function handleLives() {
-  if (lives.innerText.length <= 0) return gameOver();
-
   lives.innerText = lives.innerText.slice(0, lives.innerText.length - 1);
+  
+  if (lives.innerText.length <= 0) return gameOver();
 }
 function gameOver() {
   clearInterval(bg);
