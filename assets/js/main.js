@@ -23,9 +23,20 @@ let question = document.querySelector(".question-container");
 
 function handleLives() {
   lives.innerText = lives.innerText.slice(0, lives.innerText.length - 1);
-  
+
+  buttons.forEach((btn) => {
+    btn.style.backgroundColor = "#ff0000";
+  });
+
   if (lives.innerText.length <= 0) return gameOver();
+
+  setTimeout(() => {
+    buttons.forEach((btn) => {
+      btn.style.backgroundColor = "#ffffff";
+    });
+  }, 1000);
 }
+
 function gameOver() {
   clearInterval(bg);
   document.body.style.backgroundColor = "red";
